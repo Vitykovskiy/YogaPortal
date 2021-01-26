@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BASE>
+  <USER>
+    <LOGIN>Vitykovskiy</LOGIN>
+    <PWD>123456</PWD>
+    <FIRSTNAME>Viktor</FIRSTNAME>
+    <LASTNAME>Surskov</LASTNAME>
+    <BIRTHDATE>20.04.1992</BIRTHDATE>
+  </USER>
+  <USER>
+    <LOGIN>test</LOGIN>
+    <PWD>test</PWD>
+    <FIRSTNAME>test</FIRSTNAME>
+    <LASTNAME>test</LASTNAME>
+    <BIRTHDATE>20.04.1992</BIRTHDATE>
+  </USER>
+</BASE>

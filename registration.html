@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles/style.css"></link>
+</head>
+<body>
+<div class="regForm">
+    <p id="regErrorMessage"><br></p>
+    <input class="regInputForm" type="text" id="newlogin" name="newlogin" autofocus placeholder="Input your login"><br>
+    <input class="regInputForm" type="email" id="email" name="email" placeholder="Input your email"><br>
+    <input class="regInputForm" type="text" id="fname" name="fname" placeholder="Input your first name"><br>
+    <input class="regInputForm" type="text" id="lname" name="lname" placeholder="Input your last name"><br>
+    <input class="regInputForm" type="date" id="bdate" name="bdate" placeholder="Input your birth date"><br>
+    <input class="regInputForm" type="password" id="newpwd" name="newpwd" placeholder="Input your password"><br>
+    <input class="regInputForm" type="password" id="chkPwd" name="chkPwd" placeholder="Repeat your password"><br>
+    <input class="regInputForm" type="submit" id="submit" name="submit" value="Enter" formmethod="post"
+           onclick="usersRegistration()">
+</div>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

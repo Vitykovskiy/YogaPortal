@@ -1,0 +1,35 @@
+body {
+    background-image: url('../images/yoga-exercise-fitness-women.jpg');
+}
+.autForm {
+    width: 25%;
+    margin: 8% auto;
+}
+.regForm {
+    width: 25%;
+    margin: 3% auto;
+}
+
+.regInputForm{
+    border-radius: 4px;
+    border-style: solid;
+    width:100%;
+    margin: 5px;
+    padding: 10px;
+}
+#errorMessage{
+    color: red;
+    align: center;
+    font: 15px "Arial";
+}
+#regFormButton{
+    font-family: Arial;
+    text-align:right;
+    margin:5px;
+
+}
+
+#submit{
+    width:30%;
+    margin: 5px 35%;
+}
