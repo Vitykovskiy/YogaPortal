@@ -1,4 +1,59 @@
-#page {
+/*PAGE*/
+body {
+    background-color: #d6e7e7;
+    margin: 0px auto;
+    max-width: 1400px;
+
+}
+.panel{
+    background-color: white;
+    box-shadow: lightgray 5px 5px;
+    border-radius: 5px;
+}
+
+/*HEADER*/
+.head_panel {
+    height: 300px;
+    display: flex;
+    background-image: url("/images/_Yoga_in_the_beach_055647_.jpg");
+    border: 1px black solid;
+}
+
+.users_background_block {
+    height: 250px;
+    width: 100%;
+
+}
+
+.users_photo_block {
+    height: 250px;
+    margin: 0px 20px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    justify-content: flex-end;
+}
+.users_photo {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    border: 5px white solid;
+}
+
+.users_name{
+    border: 1px solid black;
+}
+
+.users_name p{
+    font: 30px Arial;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+/*#page {
     margin: 1%;
 }
 
@@ -69,4 +124,4 @@ li {
     width: 250px;
     float:left;
     margin:1%;
-}
+}*/
