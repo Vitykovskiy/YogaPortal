@@ -7,10 +7,14 @@
 </head>
 <body>
 <div class="autForm">
-    <p id="errorMessage"><br></p>
-    <input class="regInputForm" type="text" id="login" name="login" autofocus
-           placeholder="Input your login"><br>
-    <input class="regInputForm" type="password" id="pwd" name="pwd" placeholder="Input your password"><br>
+    <p id="errorMessage"></p>
+    <div>
+        <input class="regInputForm" type="text" id="login" name="login" autofocus
+           placeholder="Input your login">
+    </div>
+    <div>
+        <input class="regInputForm" type="password" id="pwd" name="pwd" placeholder="Input your password">
+    </div>
     <p id="regFormButton" onclick="document.location.href = 'registration.html';" onmouseover="">Create new user</p>
     <input class="regInputForm" type="submit" id="submit" name="submit" value="Enter" formmethod="post"
            onclick="authentication(login.value,pwd.value)">

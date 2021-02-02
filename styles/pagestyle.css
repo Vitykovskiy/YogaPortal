@@ -1,3 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+*, *:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none};
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner {padding:0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+imgPvertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}
+
 /*PAGE*/
 body {
     margin: 0px auto;
@@ -6,7 +44,7 @@ body {
 }
 
 .panel {
-    box-shadow: lightgray 5px 5px;
+    box-shadow: lightgray 3px 3px 5px;
     border-radius: 5px;
     background-color: white;
     margin: 20px;
@@ -19,6 +57,8 @@ body {
 }
 
 .up_head_panel {
+    background-image: url(../images/_Yoga_in_the_beach_055647_.jpg);
+    background-size: 100% auto;
     height: 250px;
     width: 100%;
     display: block;
@@ -36,7 +76,6 @@ body {
 .users_photo_block {
     height: 250px;
     margin: 0px 20px;
-    position: relative;
     display: inline-block;
 }
 
@@ -44,7 +83,7 @@ body {
     height: 240px;
     width: 240px;
     border-radius: 50%;
-    border: 5px #ffbfbf solid;
+    border: 5px lightgray solid;
     transition: opacity 0.2s;
 }
 
@@ -59,20 +98,30 @@ body {
     display: inline-block;
     position: relative;
     bottom: 25px;
+    text-shadow: 1px 1px 3px black;
 }
 
 /*CONTENT PANEL*/
-.tools_panel {
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    align-items: flex-start;
 
+.tools_panel {
+display: flex;
+align-content: space-between;
 }
 
 .left_panel {
     display: inline-block;
-    width: 30%;
+    width: 33%;
+}
+
+.right_panel {
+    font-size: 18px;
+    display: inline-block;
+    width: 67%;
+}
+
+.todo_panel,.about_panel {
+display: block;
+padding: 5px 15px;
 }
 
 .panel_button {
@@ -80,7 +129,7 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     border: 0px;
-    font: 15px Arial;
+    font-size: 18px;
     text-transform: uppercase;
     text-align: left;
     background-color: white;
@@ -92,33 +141,42 @@ body {
     outline: none;
 }
 
-.right_panel {
-    display: inline-block;
-    width: 60%;
-}
 
 /* MY ASANAS */
-.main_panel{
-   /* display: flex;*/
-    align-content: center;
+.main_panel {
+    /* display: flex;*/
+    max-width: 100%;
+    align-content: s;
+    font-size: 0px;
 }
 
-.photo_box{
-    width: 280px;
-    height: 280px;
-    margin: 5px;
+
+.photo_box {
+    width: 24%;
+    padding: 0 0 30px 0;
     display: inline-block;
     border-radius: 5px;
+    box-shadow: lightgray 3px 3px 5px;
+    margin:5px 5px;
+    vertical-align: bottom;
+}
+.panel.main_panel {
+    min-height: 95%;
 }
 
-.asana_photo{
+
+.asana_photo {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     transition: opacity 0.3s;
-    margin: auto;
 }
 
-.asana_photo:hover{
+.asana_photo:hover {
     opacity: 0.85;
 }
 
+.add_photo_button {
+    display: block;
+    margin: auto;
+    border: 1px black solid;
+}
